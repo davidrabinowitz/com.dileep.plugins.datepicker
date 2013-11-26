@@ -145,7 +145,7 @@ public class DatePickerPlugin extends CordovaPlugin {
 		 */
 		public void onDateSet(final DatePicker view, final int year,
 				final int monthOfYear, final int dayOfMonth) {
-			String returnDate = year + "/" + (monthOfYear + 1) + "/"
+			String returnDate = year + "-" + (monthOfYear + 1) + "-"
 					+ dayOfMonth;
 			callbackContext.success(returnDate);
 		}
